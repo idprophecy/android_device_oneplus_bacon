@@ -62,10 +62,6 @@ etc/firmware/cpp_firmware_v1_1_1.fw
 etc/firmware/cpp_firmware_v1_1_6.fw
 etc/firmware/cpp_firmware_v1_2_0.fw
 
-# Framework
-framework/QPerformance.jar
-etc/permissions/com.qualcomm.qti.Performance.xml
-
 # NFC
 vendor/firmware/libpn547_fw.so
 
