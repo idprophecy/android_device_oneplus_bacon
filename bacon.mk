@@ -86,10 +86,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
-# Gello
-# PRODUCT_PACKAGES += \
-#     Gello
-
 # Graphics
 PRODUCT_PACKAGES += \
     copybit.msm8974 \
@@ -246,11 +242,7 @@ PRODUCT_PACKAGES += \
     p2p_supplicant_overlay.conf
 
 # Call the proprietary setup
-$(call inherit-product-if-exists, vendor/oneplus/bacon/bacon-vendor.mk)
-
-ifneq ($(QCPATH),)
-$(call inherit-product-if-exists, $(QCPATH)/prebuilt_HY11/target/product/msm8974/prebuilt.mk)
-endif
+$(call inherit-product, vendor/oneplus/bacon/bacon-vendor.mk)
 
 # Inherit from oppo-common
 $(call inherit-product, device/oppo/common/common.mk)
