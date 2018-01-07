@@ -85,3 +85,8 @@ persist.timed.enable=true
 
 # Wifi
 wifi.interface=wlan0
+
+# OTA Updates
+ro.ota.romname=LineageOS-idprophecy
+ro.ota.manifest=https://romhut.com/roms/lineageos-idprophecy/ota.xml
+ro.ota.version=
